@@ -4,6 +4,9 @@ import { forkJoin, map, Observable, Subscription } from 'rxjs';
 import { DepartmentDetails, Departments } from '../models/department.model';
 import { ArtObjectService } from './art-object.service';
 import { DepartmentService } from './department.service';
+import {FakeArtObjectService} from './fake-art-object.service';
+import {FakeDepartmentService} from './fake-department.service';
+
 
 @Injectable({
   providedIn: 'root',
@@ -16,8 +19,8 @@ export class DepartmentArtStateService {
   recursionSubscription: Subscription = new Subscription();
 
   constructor(
-    private artObjectService: ArtObjectService,
-    private departmentService: DepartmentService,
+    private artObjectService: FakeArtObjectService,
+    private departmentService: FakeDepartmentService,
     private _httpClient: HttpClient
   ) {}
 

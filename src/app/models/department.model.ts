@@ -27,7 +27,7 @@ export class DepartmentDetails {
     this.displayName = displayName;
     this.objectIds = [];
     this.lowLimit = 0;
-    this.upperLimit = 6;
+    this.upperLimit = 10;
     this.objectList = [];
   }
 }
