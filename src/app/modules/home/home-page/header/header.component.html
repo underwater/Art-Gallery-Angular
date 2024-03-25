@@ -1,9 +1,10 @@
 <main class="header-container">
-  <div class="logo">Art Gallery</div>
+  <div class="logo">Ίδρυμα Γεωργίου Ζογγολόπουλου</div>
   <input
     type="text"
     [(ngModel)]="searchText"
     (ngModelChange)="searchAndFilterArt()"
-    placeholder="search for art....."
+    placeholder="search"
+    i18n-placeholder
   />
 </main>
