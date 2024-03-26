@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ArtObject } from 'src/app/models/artObject.model';
 
 @Component({
   selector: 'app-art-object-details-dialog',
@@ -6,13 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./art-object-details-dialog.component.scss'],
 })
 export class ArtObjectDetailsDialogComponent implements OnInit {
-  @Input() artObject: any;
+  @Input() artObject: ArtObject | null = null;
   constructor() {}
 
   get imgSrc() {
     return (
       this.artObject?.primaryImageSmall ||
-      'https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg'
+      'http://www.zongolopoulos.gr/wp-content/uploads/2022/10/00456.jpg'
     );
   }
 

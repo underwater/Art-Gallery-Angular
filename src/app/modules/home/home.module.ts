@@ -8,6 +8,7 @@ import { ArtObjectCardComponent } from './home-page/art-object-card/art-object-c
 import { ArtObjectDetailsDialogComponent } from './home-page/art-object-details-dialog/art-object-details-dialog.component';
 import { HeaderComponent } from './home-page/header/header.component';
 
+
 const routes: Routes = [
   {
     path: '',
