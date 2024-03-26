@@ -1,13 +1,12 @@
 <main class="header-container">
   <div class="logo">
-    <!-- <mat-icon>color_lens</mat-icon> -->
     Ίδρυμα Γεωργίου Ζογγολόπουλου
   </div>
-  <input
-    type="text"
-    [(ngModel)]="searchText"
+
+
+    <input    matInput    type="text"    [(ngModel)]="searchText"
+    placeholder="αναζήτηση έργου"
     (ngModelChange)="searchAndFilterArt()"
-    placeholder="search"
     i18n-placeholder
   />
 </main>
